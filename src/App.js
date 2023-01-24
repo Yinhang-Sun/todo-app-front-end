@@ -3,20 +3,19 @@ import { Component } from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <FirstComponent></FirstComponent>
-      <SecondComponent></SecondComponent>
-      <ThirdComponent></ThirdComponent>
-      <FourComponent></FourComponent>
-      
+  <div className="App">
+      <FirstComponent />
+      <SecondComponent />
+      <ThirdComponent />
+      <FourComponent />
     </div>
-  );
+  )
+  
 }
 
 function FirstComponent() {
   return (
     <div className='FirstComponent'>First Component</div>
-    
   )
 }
 
@@ -37,7 +36,10 @@ class ThirdComponent extends Component{
 class FourComponent extends Component {
   render() {
     return (
-      <div className='FourComponent'>Four Component</div>
+      <>
+        <div className='FourComponent'>Four Component</div>
+        <div className='FourComponent'>Four Component</div>
+      </>
     )
   }
 }
