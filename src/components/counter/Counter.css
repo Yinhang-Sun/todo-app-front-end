@@ -22,8 +22,15 @@
 }
 
 .count {
-    font-size: 150px;
+    font-size: 15px;
     padding: 20px;
+
+}
+
+
+.totalCount {
+    color: #00a5ab;
+    font-size: 150px;
 
 }
 
