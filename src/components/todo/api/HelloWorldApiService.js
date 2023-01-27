@@ -4,5 +4,14 @@ import axios from 'axios'
 //     return axios.get('http://localhost:8080/hello-world-bean')
 // }
 
+const apiClient = axios.create(
+    {
+        baseURL: 'http://localhost:8080'
+    }
+)
+
 export const retrieveHelloWorldBean 
-    = () => axios.get('http://localhost:8080/hello-world-bean')
+    = () => apiClient.get('/hello-world-bean')
+
+export const retrieveHelloPathVariable 
+    = (username) => apiClient.get(`/hello-world/path-variable/${username}`)
