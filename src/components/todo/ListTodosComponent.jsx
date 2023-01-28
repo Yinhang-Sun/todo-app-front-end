@@ -83,9 +83,9 @@ function ListTodosComponent() {
                                     <td>{todo.done.toString()}</td>
                                     {/* <td>{todo.targetDate.toDateString()}</td> */}
                                     <td>{todo.targetDate.toString()}</td>
-                                    <td> <button className="btn btn-success" 
-                                                    onClick={() => deleteTodo(todo.id)}>Delete</button></td>
                                     <td> <button className="btn btn-warning" 
+                                                    onClick={() => deleteTodo(todo.id)}>Delete</button></td>
+                                    <td> <button className="btn btn-success" 
                                                     onClick={() => updateTodo(todo.id)}>Update</button></td>
                                 </tr>
                             )
