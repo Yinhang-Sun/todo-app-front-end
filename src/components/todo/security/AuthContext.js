@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from "react";
 import { apiClient } from "../api/ApiClient";
-import { executeBasicAuthenticationService } from "../api/HelloWorldApiService";
+import { executeBasicAuthenticationService } from "../api/AuthenticationApiService";
 
 // 1: Create a context 
 export const AuthContext = createContext() 
